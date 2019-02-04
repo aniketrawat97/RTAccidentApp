@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">RTAccidentApp</string>
+    <string name="police">Police</string>
+    <string-array name="names">
+        <item>Distracted Driving</item>
+        <item>Speeding</item>
+        <item> Drunk Driving</item>
+        <item>Reckless Driving</item>
+        <item>Rain</item>
+        <item>Running Red Lights</item>
+        <item>Running Stop Signs</item>
+        <item>Night Driving</item>
+        <item>Teenage Drivers</item>
+        <item>Unsafe Lane Changes</item>
+        <item>Wrong-Way Driving</item>
+        <item>Tailgating</item>
+        <item> Road Rage</item>
+        <item> Animal Crossings</item>
+    </string-array>
+
+    <string-array name="roadcondition">
+        <item>dry roads</item>
+        <item>Slippery surfaces</item>
+       <item>Gravel roads</item>
+      <item> road works</item>
+      <item>Wet roads</item>
+    </string-array>
 </resources>
+
+
+
