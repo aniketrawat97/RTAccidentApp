@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>SABSE_TEZ</title>
+<style>
+#navlist
+{
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+  overflow:hidden;
+  background-color:#bacff7;
+}
+li
+{
+  float:left;
+}
+li a
+{
+  display:block;
+  padding:25px;
+  text-align:center;
+  color:black;
+  text-decoration:none;
+  font-weight:bold;
+}
+li a:hover
+{
+  display:block;
+  background-color:#f2f2f2;
+  font-family:georgia;
+}
+li a:active
+{
+  display:block;
+  background-color:#f2f2f2;
+  font-family:georgia;
+}
+<!--#nav input[type=text]
+{
+float:right;
+display:block;
+font-size:17px;
+padding-top:15px;
+padding-right:18px;
+}-->
+#cont1{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#left{
+display:block;
+float:left;
+}
+#right{
+display:block;
+float:right
+}
+</style>
+</head>	
+<body style="background-color:#f2f2f2;">
+<div style="width: 100vw;position: relative;margin-left: -50vw;margin-top:-2vw;height: 70px;left: 50%;background-color:#262626;color:gainsboro;align:left;padding-left:auto;padding-top:5px;">
+<h1 style="cursor:pointer;">Xceptions</h1>
+</div>
+<div id="nav"style="text-align:center;border-radius:4px;width: 100vw;position: relative;margin-left: -50vw;height: 100px;left: 50%;overflow:hidden;">
+<ul id="navlist">
+<li><a href="" target="_self">HOME</a></li>
+<li><a href="" target="_self">REPORT</a></li>
+<li><a href="" target="_self">INSURANCE_DETAILS</a></li>
+<li><a href="" target="_self">GALLERY</a></li>
+<li><a href="" target="_self">CONTACT US</a></li>
+<input style="margin-right:15px;margin-top:18px;" type="text" placeholder="Search...">
+</ul>
+</div>
+<div id="cont1" style="height:500px;text-align:center;border-radius:4px;margin-top:-1.5vw;background-color:white;color:#262626;padding-left:80px;padding-top:20px;padding-right:80px;">
+<form style="text-align:left;font-size:35px;" action="" method="GET">
+<ul>
+<li id="left">Vehicle_No: <input type="text" name="vehicle_no" placeholder="number_plate"></li>
+<li id="right">Cause:			<select>
+               <option value = "1">overspeeding</option>
+               <option value = "2">Drunken_driving</option>
+               <option value = "3">Distraction_to_driver</option>
+               <option value = "4">Avoiding_safety_gears</option>
+			   <option value = "5">Red_light_jumping</option>
+			   <option value = "6">Medical_case</option>
+			   <option value = "7">Brakes_failed</option>
+			   <option value = "8">Overloading</option>
+             </select></li><br><br>
+<li id="left">Location: <input type="text" name="location" placeholder="loc of accident"></li>
+<li id="right">Date: <input type="date" name="date" placeholder="date_of_accident"></li><br><br>
+<li id="left">Time: <input type="time" name="time" placeholder="time"></li>
+<li id="right">Speed: <input type="text" name="speed" placeholder="speed_of_vehicle"></li><br><br>
+<li id="left">Road_condition:<select id = "mylist">
+               <option value = "1">Isolated_ice_patches</option>
+               <option value = "2">Oil and chip</option>
+               <option value = "3">Shoulder_drop_off</option>
+               <option value = "4">Slippery when wet sign</option>
+			   <option value = "5">wheel ruts</option>
+			   <option value = "6">potholes</option>
+			   <option value = "7">Slick roads</option>
+			   <option value = "8">Construction_work_zones</option>
+             </select></li>
+<li id="right">Deaths:<input type="number" name="deaths" placeholder="no._of_people_died"></li><br><br>
+<li id="left">Injured:<input type="number" name="injured" placeholder="no._of_people_injured"></li>
+<li id="right">Driver_name:<input type="text" name="driver_name" placeholder="name_of_driver"></li><br><br>
+<li><input type="submit" value="SUBMIT"></li>
+</ul>
+ </form>
+</div>	
+</body>
+</html>

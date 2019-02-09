@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title>login_page</title>
+<style>
+#cont1
+{ 
+   align:center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background-color:lavender;
+   border_radius:4px;
+   margin:20px;
+   padding:10px;
+   height:400px;
+   width:400px;
+}   
+</style>
+</head>
+<body style="background-color:ghostwhite;">
+<div id="cont1">
+<form style="text-align:center;font-size:35px;" action="action_page.php" method="get">
+Name:<input type="text" name="name"><br>
+<br>
+<br>
+Number:<input type="text" name="number" placeholder="contact_no"><br>
+Type:<select name="type">
+               <option value = "1">police</option>
+               <option value = "2">eye_witness</option>
+			   <option value = "3">ambulance_man</option>
+   </select>
+<input type="submit" value="SUBMIT">
+</form>
+</div>
+</body>
+</html>
