@@ -2,7 +2,6 @@ package com.aniket.rtaccidentapp;
 
 import android.app.DialogFragment;
 import android.app.FragmentTransaction;
-import android.app.TimePickerDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,14 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.TimePicker;
 
-import java.util.Calendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class policeActivity extends AppCompatActivity {
-
+public class eyewitnessActivity extends AppCompatActivity {
 
     EditText edtvehicleNo;
     TextView Button;
@@ -27,7 +23,7 @@ public class policeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.police);
+        setContentView(R.layout.activity_eyewitness);
 
         Spinner dropdowncause = findViewById(R.id.spinnerCause);
         Spinner dropdownRoadCondition = findViewById(R.id.spinnerRoadCondition);
@@ -56,41 +52,6 @@ public class policeActivity extends AppCompatActivity {
                 dFragment.show(getFragmentManager(),"Time Picker");
             }
         });
-
-
-/*
-
-        edittextTime.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Calendar calender = Calendar.getInstance();
-                int inbuilthour = calender.get(Calendar.HOUR_OF_DAY);
-                int inbuiltminute = calender.get(Calendar.MINUTE);
-                int inbuiltsecond = calender.get(Calendar.SECOND);
-                */
-/*TimePickerDialog mTimePicker = new TimePickerDialog(policeActivity.this, new TimePickerDialog.OnTimeSetListener() {
-
-                }, hour, minute, second, true);*//*
-
-                */
-/*TimePickerDialog timePickerDialog=new TimePickerDialog(policeActivity.this, new TimePickerDialog.OnTimeSetListener() {
-                    @Override
-                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-
-                    }
-                }, 0, 0, false)
-                mTimePicker.setTitle("Select Time");
-                mTimePicker.show();*//*
-
-
-
-
-            }
-        });
-
-*/
 
         Button.setOnClickListener(new View.OnClickListener() {
 
@@ -121,8 +82,6 @@ public class policeActivity extends AppCompatActivity {
         return matcher.matches();
     }
 
-
-
     public void onStart() {
         super.onStart();
 
@@ -143,3 +102,13 @@ public class policeActivity extends AppCompatActivity {
 
 
 }
+
+
+
+
+
+
+
+
+
+

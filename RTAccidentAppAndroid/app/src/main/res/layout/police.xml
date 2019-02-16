@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
-    android:orientation="vertical">
+    >
 
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -18,18 +24,16 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Vehicle No."
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <EditText
-            android:id="@+id/vehicleno"
+            android:id="@+id/edittextvehicleno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:digits="0,1,2,3,4,5,6,7,8,9,*,qwertzuiopasdfghjklyxcvbnm,_,-"
             android:hint="eg:,TS 09 MD 7987"
             android:maxLength="11"
             android:inputType="text"
-            android:background="#f7f5f5"
-            />
+            android:background="#f7f5f5"/>
 
 
     </LinearLayout>
@@ -45,14 +49,14 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Cause"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <Spinner
-            android:id="@+id/spinner1"
+            android:id="@+id/spinnerCause"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:drawable/btn_dropdown"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"/>
 
     </LinearLayout>
 
@@ -67,16 +71,15 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Location"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <EditText
-            android:id="@+id/location"
+            android:id="@+id/edittextlocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Calcutta"
-            android:inputType="text"
-            android:background="#f7f5f5"
-            />
+            android:hint="Touch to set the location"
+            android:inputType="none"
+            android:background="#f7f5f5" />
 
     </LinearLayout>
 
@@ -91,15 +94,16 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Date"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <EditText
-            android:id="@+id/txtdate"
+            android:id="@+id/edittextdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Touch here to select a date"
+            android:hint="Touch to select a date"
             android:background="#f7f5f5"
-            android:textSize="16sp" />
+            android:inputType="none"
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
@@ -114,17 +118,18 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Time"
-            android:textSize="16sp"
-
-            />
+            android:textSize="16sp"/>
 
         <EditText
-            android:id="@+id/txttime"
+            android:id="@+id/edittexttime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Touch here to set time"
             android:background="#f7f5f5"
-            android:textSize="16sp" />
+            android:inputType="none"
+            android:textSize="16sp"
+            android:editable="false"
+            />
 
     </LinearLayout>
 
@@ -140,17 +145,16 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Vehicle Speed"
-            android:textSize="16sp"
-
-            />
+            android:textSize="16sp"/>
 
         <EditText
+            android:id="@+id/edittextspeed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="55"
             android:inputType="number"
             android:background="#f7f5f5"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
@@ -165,14 +169,14 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Road Condition"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <Spinner
-            android:id="@+id/spinner2"
+            android:id="@+id/spinnerRoadCondition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:drawable/btn_dropdown"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"/>
 
     </LinearLayout>
 
@@ -187,11 +191,10 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Death"
-            android:textSize="16sp"
-
-            />
+            android:textSize="16sp" />
 
         <EditText
+            android:id="@+id/edittextDeath"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="1"
@@ -212,11 +215,10 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Injuries"
-            android:textSize="16sp"
-
-            />
+            android:textSize="16sp" />
 
         <EditText
+            android:id="@+id/edittextInjuries"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="6"
@@ -237,14 +239,12 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Driver1 Name"
-            android:textSize="16sp"
-
-            />
+            android:textSize="16sp" />
 
         <EditText
+            android:id="@+id/edittextdriverone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="eg.,ramesh"
             android:inputType="textPersonName"
             android:background="#f7f5f5"
             android:textSize="16sp" />
@@ -262,16 +262,15 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:text="Driver2 Name"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
 
         <EditText
+            android:id="@+id/edittextdrivertwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="eg.,suresh"
             android:inputType="textPersonName"
             android:background="#f7f5f5"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
@@ -284,11 +283,12 @@
         android:textStyle="bold"
         android:background="#00cc99"
         android:gravity="center"
-        android:layout_alignParentBottom="true"
-
-    />
+        android:layout_alignParentBottom="true" />
 
 
 
 
 </LinearLayout>
+
+
+</ScrollView>

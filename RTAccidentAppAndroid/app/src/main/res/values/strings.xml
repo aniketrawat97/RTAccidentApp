@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">RTAccidentApp</string>
     <string name="police">Police</string>
+    <string name="Ambulance">Ambulance</string>
+    <string name="reporter">Reporter</string>
     <string-array name="names">
         <item>Distracted Driving</item>
         <item>Speeding</item>
@@ -21,9 +23,9 @@
     <string-array name="roadcondition">
         <item>dry roads</item>
         <item>Slippery surfaces</item>
-       <item>Gravel roads</item>
-      <item> road works</item>
-      <item>Wet roads</item>
+        <item>Gravel roads</item>
+        <item> road works</item>
+        <item>Wet roads</item>
     </string-array>
 </resources>
 
